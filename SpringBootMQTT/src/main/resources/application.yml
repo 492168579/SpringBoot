@@ -1,0 +1,11 @@
+#mqtt配置
+com:
+  mqtt:
+    host: tcp://39.106.136.45:1883
+    clientid: testClient
+    serverid: testServer
+    topic: topic
+    username: admin
+    password: public
+    timeout: 10
+    keepalive: 20

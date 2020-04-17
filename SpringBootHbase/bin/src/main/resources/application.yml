@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  datasource:
+     url: jdbc:mysql://localhost:3306/webchat?useUnicode=true&characterEncoding=UTF-8
+     username: root
+     password: 123456
+     driver-class-name: com.mysql.jdbc.Driver
+     hikari: 
+       maxLifetime: 1765000 #一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒以上 
+       maximumPoolSize: 15 #连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count) 
+hbase:
+  config:
+    hbase.zookeeper.quorum: 127.0.0.1,127.0.0.2,127.0.0.3
+    hbase.zookeeper.property.clientPort: 2181
+    fs.defaultFS: hdfs://cc-11:8020
+    fs.trash.interval: 1

@@ -1,0 +1,4 @@
+server:
+  port: 6080
+  servlet:
+    context-path: /SpringbootSecurity

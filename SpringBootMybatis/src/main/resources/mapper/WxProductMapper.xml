@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzy.could.dao.WxProductMapper">
+	<resultMap id="BaseResultMap" type="com.yzy.could.entity.WxProduct">
+		<id column="product_id" jdbcType="BIGINT" property="productId" />
+		<result column="crete_time" jdbcType="TIMESTAMP" property="creteTime" />
+		<result column="img_big_url" jdbcType="VARCHAR" property="imgBigUrl" />
+		<result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+		<result column="price" jdbcType="DECIMAL" property="price" />
+		<result column="product_code" jdbcType="VARCHAR" property="productCode" />
+		<result column="product_name" jdbcType="VARCHAR" property="productName" />
+		<result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+		<result column="valid_status" jdbcType="VARCHAR" property="validStatus" />
+	</resultMap>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+		delete from wx_product
+		where product_id = #{productId,jdbcType=BIGINT}
+	</delete>
+	<insert id="insert" parameterType="com.yzy.could.entity.WxProduct">
+		insert into wx_product (product_id, crete_time, img_big_url,
+		img_url, price, product_code,
+		product_name, update_time, valid_status
+		)
+		values (#{productId,jdbcType=BIGINT}, #{creteTime,jdbcType=TIMESTAMP},
+		#{imgBigUrl,jdbcType=VARCHAR},
+		#{imgUrl,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, #{productCode,jdbcType=VARCHAR},
+		#{productName,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP},
+		#{validStatus,jdbcType=VARCHAR}
+		)
+	</insert>
+	<update id="updateByPrimaryKey" parameterType="com.yzy.could.entity.WxProduct">
+		update wx_product
+		set crete_time = #{creteTime,jdbcType=TIMESTAMP},
+		img_big_url = #{imgBigUrl,jdbcType=VARCHAR},
+		img_url = #{imgUrl,jdbcType=VARCHAR},
+		price = #{price,jdbcType=DECIMAL},
+		product_code = #{productCode,jdbcType=VARCHAR},
+		product_name = #{productName,jdbcType=VARCHAR},
+		update_time = #{updateTime,jdbcType=TIMESTAMP},
+		valid_status = #{validStatus,jdbcType=VARCHAR}
+		where product_id = #{productId,jdbcType=BIGINT}
+	</update>
+	<select id="selectByPrimaryKey" parameterType="java.lang.Long"
+		resultMap="BaseResultMap">
+		select product_id, crete_time, img_big_url, img_url, price, product_code,
+		product_name,
+		update_time, valid_status
+		from wx_product
+		where product_id = #{productId,jdbcType=BIGINT}
+	</select>
+	<select id="selectAll" resultMap="BaseResultMap">
+		select product_id, crete_time, img_big_url, img_url, price,
+		product_code, product_name,
+		update_time, valid_status
+		from wx_product
+		<if test="productId!=null and productId!=''">
+			AND a.product_id =#{documentStatus}
+		</if>
+	</select>
+</mapper>

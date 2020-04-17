@@ -1,0 +1,51 @@
+# web服务配置
+server:
+  port: 6080
+  servlet:
+    context-path: /kafkaClient
+  tomcat:
+    min-spare-threads: 200
+    accept-count: 200
+    max-connections: 500
+  connection-timeout: 30000
+  ssl:
+    enabled: false
+    
+#spring 参数配置
+spring:
+  kafka:
+  # kafka生产者配置
+    producer:
+      bootstrap-servers: 39.106.136.45:9092
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+        
+  # kafak消费者参数配置
+    consumer:
+      bootstrap-servers: 39.106.136.45:9092
+      group-id: group-monitoring
+      auto-commit-interval: 100
+      enable-auto-commit: true
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      max-poll-records: 1
+#智能云拍系统接口URL
+weburl:
+  smeterRspConsumerUrl: http://10.100.8.204:80/ammeter/kafka/smeterRspConsumer
+  snapReportConsumerUrl: http://10.100.8.204:80:7080/ammeter/kafka/snapReportConsumer
+  snapResp01ConsumerUrl: http://10.100.8.204:80/ammeter/kafka/snapResp01Consumer
+  snapResp01ConsumerErrorUrl: http://10.100.8.204:80/ammeter/kafka/snapResp01ConsumerError
+  alarmReq01ConsumerUrl: http://10.100.8.204:80/ammeter/kafka/alarmReq01Consumer
+  delayResp01ConsumerUrl: http://10.100.8.204:80/ammeter/kafka/delayResp01Consumer
+  versionResp01ConsumerUrl: http://10.100.8.204:80/ammeter/kafka/versionResp01Consumer
+  ipResp01ConsumerUrl: http://10.100.8.204:80/ammeter/kafka/ipResp01Consumer
+  brightneesResp01ConsumerUrl: http://10.100.8.204:80/ammeter/kafka/brightneesResp01Consumer
+  timeResp01ConsumerUrl: http://10.100.8.204:80/ammeter/kafka/timeResp01Consumer
+  ammeterCommandConsumerUrl: http://10.100.8.204:80/ammeter/kafka/ammeterCommandConsumer
+
+logging: 
+  config: classpath:log4j2.xml  

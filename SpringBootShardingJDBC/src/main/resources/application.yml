@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /SpringbootShardingJDBC
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+database0:
+   url: jdbc:mysql://39.106.136.45:3306/database0?characterEncoding=utf8&useSSL=false
+   username: root
+   password: mysql
+   driverClassName: com.mysql.jdbc.Driver
+   databaseName: database0
+database1:
+   url: jdbc:mysql://39.106.136.45:3306/database1?characterEncoding=utf8&useSSL=false
+   username: root
+   password: mysql
+   driverClassName: com.mysql.jdbc.Driver
+   databaseName: database1

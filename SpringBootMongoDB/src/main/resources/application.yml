@@ -1,0 +1,7 @@
+server:
+  port: 8080
+spring:
+  data:
+    mongodb: 
+      uri: mongodb://cmcc:123456@39.106.136.45:27017/cmcc  #这个地方有个坑，不要写username,不对，就这么写
+      
