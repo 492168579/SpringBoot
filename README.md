@@ -1,4 +1,4 @@
-SpringBoot 学习，不定时更新呢
+SpringBoot 学习，不定时更新
 
 
 springboot整合eureka
