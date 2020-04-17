@@ -28,7 +28,7 @@
 		<module>SpringBootWebsocket</module>
 		<module>SpringBootSlide</module>
 		<module>SpringBootShardingJDBC</module>
-		<module>SpringbooID</module>
+		<module>SpringBooID</module>
 		<module>SpringBootKafka</module>
 		<module>SpringBootRabbitMQ</module>
 		<module>SpringBootFile</module>

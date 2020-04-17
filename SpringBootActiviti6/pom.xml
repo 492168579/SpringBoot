@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.yzy</groupId>
-	<artifactId>SpringbootActiviti6</artifactId>
+	<artifactId>SpringBootActiviti6</artifactId>
 	<packaging>jar</packaging>
 
-	<name>SpringbootActiviti</name>
+	<name>SpringBootActiviti6</name>
 	<description>Activiti demo project for Spring Boot</description>
 
 	<parent>
