@@ -7,85 +7,83 @@ import java.util.Date;
  */
 public class Vacation {
 
-    /**
-     * 申请人
-     */
-    private String applyUser;
-    private int days;
-    private String reason;
-    private Date applyTime;
-    private String applyStatus;
+	/**
+	 * 申请人
+	 */
+	private String applyUser;
+	private int days;
+	private String reason;
+	private Date applyTime;
+	private String applyStatus;
 
-    /**
-     * 审核人
-     */
-    private String auditor;
-    private String result;
-    private Date auditTime;
+	/**
+	 * 审核人
+	 */
+	private String auditor;
+	private String result;
+	private Date auditTime;
 
+	public String getApplyStatus() {
+		return applyStatus;
+	}
 
-    public String getApplyStatus() {
-        return applyStatus;
-    }
+	public void setApplyStatus(String applyStatus) {
+		this.applyStatus = applyStatus;
+	}
 
-    public void setApplyStatus(String applyStatus) {
-        this.applyStatus = applyStatus;
-    }
+	public String getApplyUser() {
+		return applyUser;
+	}
 
-    public String getApplyUser() {
-        return applyUser;
-    }
+	public void setApplyUser(String applyUser) {
+		this.applyUser = applyUser;
+	}
 
-    public void setApplyUser(String applyUser) {
-        this.applyUser = applyUser;
-    }
+	public int getDays() {
+		return days;
+	}
 
-    public int getDays() {
-        return days;
-    }
+	public void setDays(int days) {
+		this.days = days;
+	}
 
-    public void setDays(int days) {
-        this.days = days;
-    }
+	public String getReason() {
+		return reason;
+	}
 
-    public String getReason() {
-        return reason;
-    }
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
 
-    public void setReason(String reason) {
-        this.reason = reason;
-    }
+	public Date getApplyTime() {
+		return applyTime;
+	}
 
-    public Date getApplyTime() {
-        return applyTime;
-    }
+	public void setApplyTime(Date applyTime) {
+		this.applyTime = applyTime;
+	}
 
-    public void setApplyTime(Date applyTime) {
-        this.applyTime = applyTime;
-    }
+	public String getAuditor() {
+		return auditor;
+	}
 
+	public void setAuditor(String auditor) {
+		this.auditor = auditor;
+	}
 
-    public String getAuditor() {
-        return auditor;
-    }
+	public String getResult() {
+		return result;
+	}
 
-    public void setAuditor(String auditor) {
-        this.auditor = auditor;
-    }
+	public void setResult(String result) {
+		this.result = result;
+	}
 
-    public String getResult() {
-        return result;
-    }
+	public Date getAuditTime() {
+		return auditTime;
+	}
 
-    public void setResult(String result) {
-        this.result = result;
-    }
-
-    public Date getAuditTime() {
-        return auditTime;
-    }
-
-    public void setAuditTime(Date auditTime) {
-        this.auditTime = auditTime;
-    }
+	public void setAuditTime(Date auditTime) {
+		this.auditTime = auditTime;
+	}
 }

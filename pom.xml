@@ -37,6 +37,7 @@
 		<module>SpringBootELK</module>
 		<module>SpringBootEasyExcel</module>
 		<module>SpringBootUFLO2</module>
+		<module>SpringBootHanLP</module>
 	</modules>
 
 	<properties>

@@ -10,7 +10,6 @@ import com.yzy.entity.VacTask;
 import com.yzy.entity.Vacation;
 import com.yzy.service.VacationService;
 
-
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -65,7 +64,7 @@ public class VacationController {
 	 */
 	@GetMapping("/applicationVacationImage/{id}")
 	public void applicationVacationImage(@PathVariable("id") String id, HttpServletResponse response) {
-	
+
 		vacationService.getFlowImgByInstanceId(id, response);
 	}
 

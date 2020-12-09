@@ -25,7 +25,6 @@ public class EasyExcleController {
 	@PostMapping("upload")
 	@ResponseBody
 	public String upload(MultipartFile file) throws Exception {
-		EasyExcel.read(file.getInputStream(), UploadData.class, new UploadDataListener(uploadDAO)).sheet().doRead();
 		return "success";
 	}
 }

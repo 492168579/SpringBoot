@@ -5,9 +5,9 @@ server:
 spring:
   rabbitmq:
     connection-timeout: 15000  #超时时间
-    addresses: 39.106.136.45:5672  #多个以逗号分隔
-    password: guest
-    username: guest
+    addresses: 112.35.66.53:5672  #多个以逗号分隔
+    password: cTt2uAQAwV
+    username: ygcg
     listener:
       simple:
         prefetch: 1                 # 每个线程每次消费一条数据，防止mq 数据过多时，造成web应用宕机
