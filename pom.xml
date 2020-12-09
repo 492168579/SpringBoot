@@ -17,28 +17,28 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>SpringBootMybatis</module>
-		<module>SpringBootHbase</module>
-		<module>SpringBootEasticSearch</module>
+		<module>SpringBooID</module>
 		<module>SpringBootActiviti6</module>
 		<module>SpringBootActiviti7</module>
 		<module>SpringBootAdmin</module>
-		<module>SpringBootEmail</module>
-		<module>SpringBootSchedule</module>
-		<module>SpringBootMongoDB</module>
-		<module>SpringBootWebsocket</module>
-		<module>SpringBootSlide</module>
-		<module>SpringBootShardingJDBC</module>
-		<module>SpringBooID</module>
-		<module>SpringBootKafka</module>
-		<module>SpringBootRabbitMQ</module>
-		<module>SpringBootFile</module>
-		<module>SpringBootSecurity</module>
-		<module>SpringBootMQTT</module>
-		<module>SpringBootELK</module>
+		<module>SpringBootEasticSearch</module>
 		<module>SpringBootEasyExcel</module>
-		<module>SpringBootUFLO2</module>
+		<module>SpringBootELK</module>
+		<module>SpringBootEmail</module>
+		<module>SpringBootFile</module>
 		<module>SpringBootHanLP</module>
+		<module>SpringBootHbase</module>
+		<module>SpringBootKafka</module>
+		<module>SpringBootMongoDB</module>
+		<module>SpringBootMQTT</module>
+		<module>SpringBootMybatis</module>
+		<module>SpringBootRabbitMQ</module>
+		<module>SpringBootSchedule</module>
+		<module>SpringBootSecurity</module>
+		<module>SpringBootShardingJDBC</module>
+		<module>SpringBootSlide</module>
+		<module>SpringBootUFLO2</module>
+		<module>SpringBootWebsocket</module>
 	</modules>
 
 	<properties>
