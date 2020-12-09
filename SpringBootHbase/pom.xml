@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>SpringbootHbase</artifactId>
+	<artifactId>SpringBootHbase</artifactId>
 	<packaging>jar</packaging>
 
-	<name>SpringbootHbase</name>
+	<name>SpringBootHbase</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
