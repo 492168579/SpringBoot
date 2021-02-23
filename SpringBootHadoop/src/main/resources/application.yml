@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /SpringBootHadoop
+spring:
+    servlet:
+      multipart:
+         max-file-size: 50MB
+         max-request-size: 50MB
+hdfs:
+  path: hdfs://hadoop10:9000
+  username: yezhaoyi

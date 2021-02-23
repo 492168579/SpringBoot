@@ -10,7 +10,8 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>SpringBooID</module>
+		<module>SpringBootCommon</module>
+		<module>SpringBootID</module>
 		<module>SpringBootActiviti6</module>
 		<module>SpringBootActiviti7</module>
 		<module>SpringBootAdmin</module>
@@ -32,6 +33,8 @@
 		<module>SpringBootSlide</module>
 		<module>SpringBootUFLO2</module>
 		<module>SpringBootWebsocket</module>
+		<module>SpringBootHadoop</module>
+		<module>SpringBootFTP</module>
 	</modules>
 
 	<properties>
@@ -113,12 +116,26 @@
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
 		</repository>
+		<repository>
+			<id>spring-release</id>
+			<url>http://repo.spring.io/libs-release</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>spring-milestones</id>
 			<name>Spring Milestones</name>
 			<url>https://repo.spring.io/milestone</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-release</id>
+			<url>http://repo.spring.io/libs-release</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
 </project>

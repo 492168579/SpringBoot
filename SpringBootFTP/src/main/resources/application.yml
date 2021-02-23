@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /SpringBootFTP
+#ftp
+ftp:
+  host: 47.95.206.149   #ftp地址-ftp请求。ftp://192.168.3.127:22
+  port: 21              #ftp端口号
+  username: ftpuser01   #ftp请求的用户名
+  password: ftpuser01   #ftp请求的密码
+  filepath: /           #ftp请求读取写入的文件路径
+  web:
+    host: 192.168.3.127  #http请求路径。http://192.168.3.127:82
+    port: 82
